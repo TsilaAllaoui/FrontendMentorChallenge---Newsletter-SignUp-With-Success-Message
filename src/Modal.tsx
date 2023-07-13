@@ -2,7 +2,7 @@ import "./Modal.scss";
 import check from "../public/images/icon-success.svg";
 
 function Modal({ email }: { email: string }) {
-  const dismiss = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const dismiss = () => {
     const element = document.querySelector(
       "#modal-container"
     ) as HTMLDivElement;
