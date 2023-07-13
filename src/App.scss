@@ -1,0 +1,128 @@
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#app {
+  font-family: "Roboto Regular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 75vh;
+  border: none;
+  border-radius: 2rem;
+  background-color: white;
+
+  #left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 1.5rem;
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: "Roboto Bold";
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+    }
+
+    ul {
+      padding-inline-start: 0;
+      margin-bottom: 1rem;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        margin: 0.4rem 0;
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    #input {
+      width: 90%;
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-family: "Roboto Bold";
+        margin: 0.5rem 0;
+      }
+
+      div {
+        height: 2.5rem;
+        width: 100%;
+        border-radius: 0.3rem;
+        border: solid 1px black;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        input {
+          width: 75%;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      #error {
+        border: none;
+        height: 1rem;
+        color: red;
+        font-family: "Roboto Bold";
+      }
+
+      button {
+        width: 100%;
+        margin: 1rem 0;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.3rem;
+        color: white;
+        font-family: "Roboto Bold";
+        background: rgb(35, 39, 66);
+
+        &:hover {
+          background: linear-gradient(
+            to right,
+            rgb(255, 84, 116),
+            rgb(255, 104, 65)
+          );
+        }
+      }
+    }
+  }
+
+  #right {
+    width: 50%;
+    height: 92%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+  }
+}
