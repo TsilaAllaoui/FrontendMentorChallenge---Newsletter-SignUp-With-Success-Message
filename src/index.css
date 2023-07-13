@@ -16,4 +16,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(35, 39, 66);
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 416px) {
+    overflow: hidden;
+    background-color: white;
+  }
 }
